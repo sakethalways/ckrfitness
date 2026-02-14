@@ -9,7 +9,7 @@ const Hero = () => {
   const disableAnimations = useDisableAnimations();
 
   return (
-    <section className="relative pt-40 pb-16 md:pt-16 md:pb-20 flex items-center overflow-hidden">
+    <section className="relative pt-24 pb-16 md:pt-16 md:pb-20 flex items-center overflow-hidden">
       {/* Dark gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background/95" />
       
