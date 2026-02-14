@@ -29,7 +29,7 @@ const WhyClients = () => {
           </h2>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto px-6 md:px-0">
           <div className="space-y-2 md:space-y-4">
             {reasons.map((reason, index) => (
               <motion.div
