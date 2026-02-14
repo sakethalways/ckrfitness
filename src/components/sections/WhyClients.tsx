@@ -30,7 +30,7 @@ const WhyClients = () => {
         </motion.div>
 
         <div className="max-w-3xl mx-auto">
-          <div className="space-y-4">
+          <div className="space-y-2 md:space-y-4">
             {reasons.map((reason, index) => (
               <motion.div
                 key={index}
@@ -38,10 +38,10 @@ const WhyClients = () => {
                 whileInView={disableAnimations ? { opacity: 1 } : { opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: disableAnimations ? 0 : 0.5, delay: disableAnimations ? 0 : index * 0.05 }}
-                className="flex gap-4 items-start"
+                className="flex gap-3 md:gap-4 items-start"
               >
                 <div className="w-2 h-2 rounded-full gradient-primary shrink-0 mt-2" />
-                <p className="text-lg text-foreground/90 font-body leading-relaxed">{reason}</p>
+                <p className="text-sm md:text-lg text-foreground/90 font-body leading-relaxed">{reason}</p>
               </motion.div>
             ))}
           </div>

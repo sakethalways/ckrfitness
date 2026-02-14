@@ -92,7 +92,7 @@ const Navbar = () => {
             className="fixed inset-0 z-40 bg-background pt-20 lg:hidden"
           >
             <div className="container px-4">
-              <div className="flex flex-col gap-4 py-8">
+              <div className="flex flex-col gap-2 py-6">
                 {navLinks.map((link, index) => (
                   <motion.a
                     key={link.name}
@@ -101,7 +101,7 @@ const Navbar = () => {
                     animate={disableAnimations ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
                     transition={disableAnimations ? { duration: 0 } : { delay: index * 0.05 }}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="font-display text-3xl text-foreground hover:text-primary transition-colors"
+                    className="font-display text-xl text-foreground hover:text-primary transition-colors"
                   >
                     {link.name}
                   </motion.a>
@@ -113,7 +113,7 @@ const Navbar = () => {
                   initial={disableAnimations ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                   animate={disableAnimations ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
                   transition={disableAnimations ? { duration: 0 } : { delay: navLinks.length * 0.05 }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg gradient-primary font-semibold text-lg mt-4"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg gradient-primary font-semibold text-base mt-4"
                 >
                   Start Trial Week
                   <ArrowRight className="w-5 h-5" />
