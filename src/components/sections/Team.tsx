@@ -33,7 +33,7 @@ const Team = () => {
   const disableAnimations = useDisableAnimations();
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden">
+    <section className="py-12 md:py-20 relative overflow-hidden">
       <div className="absolute inset-0 gradient-glow opacity-20" />
       
       <div className="container relative z-10 px-4 md:px-6">
@@ -44,7 +44,7 @@ const Team = () => {
           transition={{ duration: disableAnimations ? 0 : 0.6 }}
           className="text-center mb-16 px-4 sm:px-0"
         >
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4">
             Meet the <span className="text-gradient">Team</span> Behind Your Progress
           </h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto font-body">

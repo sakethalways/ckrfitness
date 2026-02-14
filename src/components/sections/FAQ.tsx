@@ -10,43 +10,39 @@ import {
 const faqs = [
   {
     question: "Do I need to pay before starting?",
-    answer: "No. Every client starts with a free trial week. You experience the system, communication, and support first — then decide if you want to continue. No blind commitment.",
+    answer: "Payment begins only after the trial week if you decide to continue.",
   },
   {
-    question: "What happens during the free trial week?",
-    answer: "During the free trial, you complete an assessment, have an onboarding call, experience daily support and communication, see how the team works together, and follow a structure based on your goals. There's no sales pressure — just experience the system as it actually runs.",
-  },
-  {
-    question: "Is this only for beginners?",
-    answer: "No. We work with beginners, people restarting after a break, intermediate and advanced individuals, busy professionals, and people with injuries or limitations. Everything is personalized based on your current level and lifestyle.",
-  },
-  {
-    question: "Do you provide meal plans or strict diets?",
-    answer: "We don't give rigid or generic diets. Nutrition is personalized to your lifestyle, built around foods you already enjoy, practical and sustainable, and adjusted as your schedule and goals change. No extreme restrictions. No copy-paste plans.",
-  },
-  {
-    question: "What if I have injuries or pain?",
-    answer: "That's completely okay. When needed, a physiotherapist is involved, mobility and pain management are addressed, and exercises are modified safely. Your progress never depends on pushing through pain.",
+    question: "What happens during the trial week?",
+    answer: "You complete onboarding, experience structured coaching, and interact with your assigned team. This allows you to understand our communication standards and system before long-term commitment.",
   },
   {
     question: "How is this different from other online coaching programs?",
-    answer: "Most programs offer PDFs, one coach, and minimal follow-ups. Our system offers multiple experts supporting one client, daily communication, fast responses, structured systems (not motivation talk), and real human connection. You're supported every day — not left alone.",
+    answer: "Most programs provide static plans with limited follow-up. Our system involves multiple specialists, daily communication, structured reviews, and ongoing program adjustments.",
   },
   {
     question: "How much time do I need to commit each day?",
-    answer: "It depends on your program and goals. We design plans that fit your work schedule, energy levels, and available time. Consistency matters more than long hours.",
+    answer: "Program structure is designed around your schedule. Consistency matters more than long hours, and plans are adjusted to fit your availability.",
   },
   {
-    question: "Can I switch programs later?",
-    answer: "Yes. As your goals, schedule, or preferences change, programs can be adjusted, structure can evolve, and support adapts with you. You're not locked into a rigid system.",
+    question: "Is this only for beginners?",
+    answer: "No. We work with beginners, professionals returning after a break, and experienced individuals seeking structured performance support.",
   },
   {
-    question: "What if I decide not to continue after the free trial?",
-    answer: "That's completely fine. There's no obligation, no pressure, and no follow-ups pushing you. You continue only if it feels right.",
+    question: "Do you provide strict meal plans?",
+    answer: "Nutrition is personalized and practical. We build strategies around your lifestyle instead of imposing rigid or generic diets.",
+  },
+  {
+    question: "What if I have injuries or pain?",
+    answer: "Programs are adjusted accordingly. Physiotherapy support is integrated when required to ensure safe progress.",
+  },
+  {
+    question: "What if I decide not to continue after the trial week?",
+    answer: "There is no obligation. You continue only if the structure aligns with your expectations.",
   },
   {
     question: "How do I get started?",
-    answer: "Simply click \"Start Free Trial,\" fill out the coaching form, and we'll take it from there.",
+    answer: "Click \"Start Trial Week,\" complete the assessment form, and our team will guide you through onboarding.",
   },
 ];
 
@@ -65,12 +61,9 @@ const FAQ = () => {
           transition={{ duration: disableAnimations ? 0 : 0.6 }}
           className="text-center mb-16 px-4 sm:px-0"
         >
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4">
             Frequently Asked <span className="text-gradient">Questions</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            Everything you need to know before getting started.
-          </p>
         </motion.div>
 
         <motion.div

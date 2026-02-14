@@ -6,10 +6,10 @@ import { useDisableAnimations } from "@/hooks/use-performance";
 const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd282UtWOtK8TQqXLQWFntfmTZTLP41LSGPQ_bNjn7pxxoprQ/viewform?usp=header";
 
 const navLinks = [
+  { name: "Team", href: "#team" },
   { name: "Approach", href: "#approach" },
   { name: "How It Works", href: "#how-it-works" },
   { name: "Programs", href: "#programs" },
-  { name: "Team", href: "#team" },
   { name: "FAQ", href: "#faq" },
 ];
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="container px-4 md:px-6">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="#" className="font-display text-lg md:text-xl text-gradient px-4 py-2 rounded-full border-2 border-primary hover:bg-primary/10 transition-colors duration-300">
+            <a href="#" className="font-display text-lg md:text-xl text-foreground hover:text-primary transition-colors">
               CKR FITNESS
             </a>
 
@@ -65,7 +65,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg gradient-primary font-semibold text-sm transition-all duration-300 hover:scale-105"
               >
-                Start Free Trial
+                Start Trial Week
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -115,7 +115,7 @@ const Navbar = () => {
                   transition={disableAnimations ? { duration: 0 } : { delay: navLinks.length * 0.05 }}
                   className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg gradient-primary font-semibold text-lg mt-4"
                 >
-                  Start Free Trial
+                  Start Trial Week
                   <ArrowRight className="w-5 h-5" />
                 </motion.a>
               </div>

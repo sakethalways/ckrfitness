@@ -7,61 +7,62 @@ const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd282UtWOtK8TQ
 const programs = [
   {
     icon: Dumbbell,
-    title: "One-on-One Live Fitness Coaching",
-    bestFor: "People who want full guidance, accountability, and live support.",
+    title: "Private Live Coaching",
+    bestFor: "Professionals who want structured accountability and real-time coaching.",
     features: [
-      "Live one-on-one workout sessions",
-      "Fully personalized training plan",
-      "Customized nutrition support",
-      "Daily WhatsApp chat support",
-      "Weekly check-ins and team calls",
-      "Physio and mobility guidance when needed",
+      "Private live coaching sessions",
+      "Personalized training structure",
+      "Integrated nutrition support",
+      "Daily communication access",
+      "Weekly performance reviews",
+      "Physio & mobility support when required",
     ],
     pricing: [
-      { duration: "4 Weeks", price: "₹14,000 – ₹16,000" },
-      { duration: "12 Weeks", price: "₹39,000 – ₹45,000" },
+      { duration: "4 Weeks / 4 Sessions", price: "₹14,000" },
+      { duration: "4 Weeks / 5 Sessions", price: "₹16,000" },
+      { duration: "12 Weeks / 4 Sessions", price: "₹39,000", label: "Most Popular" },
+      { duration: "12 Weeks / 5 Sessions", price: "₹45,000" },
     ],
     featured: true,
   },
   {
     icon: Dumbbell,
-    title: "Online Fitness + Nutrition Coaching",
-    bestFor: "People who want structure and support without daily live sessions.",
+    title: "Structured Online Coaching",
+    bestFor: "Professionals who want structured guidance without daily live sessions.",
     features: [
-      "Personalized workout plan",
-      "Customized nutrition plan",
+      "Personalized training program",
+      "Custom nutrition framework",
       "Two live demo sessions for form guidance",
-      "Exercise form review via short videos",
-      "Weekly check-ins and plan updates",
-      "Chat and call support",
+      "Video-based form review",
+      "Weekly structured check-ins",
+      "Ongoing chat and call support",
     ],
     pricing: [{ duration: "12 Weeks", price: "₹26,000" }],
     featured: false,
   },
   {
     icon: Utensils,
-    title: "Personalized Nutrition Coaching",
-    bestFor: "People who want sustainable eating without strict rules.",
+    title: "Performance Nutrition Coaching",
+    bestFor: "Individuals focused on sustainable fat loss, muscle gain, or metabolic health.",
     features: [
-      "Customized nutrition plan based on your lifestyle",
-      "Food choices built around what you already enjoy",
-      "Weekly check-ins and plan adjustments",
-      "Daily chat support",
-      "Practical, flexible approach",
+      "Fully customized nutrition strategy",
+      "Lifestyle-integrated meal structure",
+      "Weekly progress reviews",
+      "Daily communication support",
     ],
     pricing: [{ duration: "12 Weeks", price: "₹16,000" }],
     featured: false,
   },
   {
     icon: Leaf,
-    title: "Group Yoga Classes",
-    bestFor: "People who want flexibility, consistency, and a simple routine.",
+    title: "Group Yoga (Online)",
+    bestFor: "Professionals seeking flexibility, mobility, and structured weekly recovery.",
     features: [
-      "Unlimited group yoga classes",
-      "Multiple time slots (morning and evening)",
-      "5 days per week",
-      "Attend as many sessions as you want",
-      "Structured 12-week format",
+      "Live online group yoga sessions",
+      "5 structured days per week",
+      "Multiple live time slots each day",
+      "Access to attend any scheduled session",
+      "12-week structured format",
     ],
     pricing: [{ duration: "12 Weeks", price: "₹16,000" }],
     featured: false,
@@ -69,13 +70,14 @@ const programs = [
   {
     icon: Users,
     title: "Yoga + Nutrition Coaching",
-    bestFor: "People who want holistic progress with movement and nutrition.",
+    bestFor: "Individuals who want structured yoga and personalized nutrition combined.",
     features: [
-      "Unlimited group yoga classes",
-      "Multiple time slots (morning and evening)",
-      "Personalized nutrition plan",
-      "Weekly nutrition check-ins",
-      "Daily chat support",
+      "Live online group yoga sessions",
+      "5 structured days per week",
+      "Access to attend any scheduled session",
+      "Personalized nutrition strategy",
+      "Weekly nutrition reviews",
+      "Daily structured support",
     ],
     pricing: [{ duration: "12 Weeks", price: "₹26,000" }],
     featured: false,
@@ -97,11 +99,11 @@ const Programs = () => {
           transition={{ duration: disableAnimations ? 0 : 0.6 }}
           className="text-center mb-16 px-4 sm:px-0"
         >
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">
-            Programs & <span className="text-gradient">Pricing</span>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4">
+            Programs & <span className="text-gradient">Investment</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            All programs begin with a free trial. Final structure and commitment happen only after you experience the system.
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto font-body">
+            All programs are delivered in a structured online format, ensuring international accessibility and consistent support. Every client begins with a structured trial week. Final program structure and long-term commitment are confirmed after alignment during onboarding.
           </p>
         </motion.div>
 
@@ -164,20 +166,17 @@ const Programs = () => {
           transition={{ delay: disableAnimations ? 0 : 0.5 }}
           className="text-center mt-12"
         >
-          <p className="text-muted-foreground mb-6 font-body">
-            Every program is supported by a real team — not just one person.
-          </p>
           <a
             href={GOOGLE_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-2 md:gap-3 px-5 md:px-8 py-2 md:py-4 rounded-lg gradient-primary font-semibold text-sm md:text-lg shadow-glow transition-all duration-300 hover:scale-105"
           >
-            START WITH A FREE TRIAL
+            Start Your Trial Week
             <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1" />
           </a>
           <p className="text-sm text-muted-foreground mt-4 font-body">
-            Experience the system before committing.
+            Experience the structure before long-term commitment.
           </p>
         </motion.div>
       </div>

@@ -27,9 +27,9 @@ const FinalCTA = () => {
             whileInView={disableAnimations ? { opacity: 1 } : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: disableAnimations ? 0 : 0.2 }}
-            className="font-display text-4xl md:text-5xl lg:text-7xl mb-6"
+            className="font-display text-4xl md:text-5xl lg:text-6xl mb-6"
           >
-            Ready to <span className="text-gradient">Get Started?</span>
+            <span className="text-gradient">Ready to Get Started?</span>
           </motion.h2>
 
           <motion.p
@@ -37,26 +37,10 @@ const FinalCTA = () => {
             whileInView={disableAnimations ? { opacity: 1 } : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: disableAnimations ? 0 : 0.3 }}
-            className="text-lg md:text-xl text-muted-foreground mb-4 font-body"
+            className="text-lg md:text-xl text-muted-foreground mb-8 font-body"
           >
-            Start with a free trial and experience how our system actually works.
+            Begin with a structured trial week and experience how our system operates.
           </motion.p>
-
-          <motion.div
-            initial={disableAnimations ? { opacity: 1 } : { opacity: 0, y: 20 }}
-            whileInView={disableAnimations ? { opacity: 1 } : { opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: disableAnimations ? 0 : 0.4 }}
-            className="flex flex-col items-center gap-2 mb-8"
-          >
-            <div className="flex flex-wrap justify-center gap-4 text-muted-foreground font-body">
-              <span>No pressure.</span>
-              <span className="hidden sm:inline">•</span>
-              <span>No forced commitment.</span>
-              <span className="hidden sm:inline">•</span>
-              <span>Just real support.</span>
-            </div>
-          </motion.div>
 
           <motion.div
             initial={disableAnimations ? { opacity: 1 } : { opacity: 0, y: 20 }}
@@ -71,12 +55,12 @@ const FinalCTA = () => {
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 md:gap-3 px-6 md:px-10 py-3 md:py-5 rounded-xl gradient-primary font-semibold text-sm md:text-xl shadow-glow transition-all duration-300 hover:scale-105"
             >
-              START WITH A FREE TRIAL
+              Start Your Trial Week
               <ArrowRight className="w-4 h-4 md:w-6 md:h-6 transition-transform group-hover:translate-x-1" />
             </a>
             
             <p className="text-xs md:text-sm text-muted-foreground font-body">
-              Experience the system before committing.
+              Experience the structure before long-term commitment.
             </p>
           </motion.div>
         </motion.div>

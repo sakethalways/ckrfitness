@@ -3,17 +3,16 @@ import { Check, X } from "lucide-react";
 import { useDisableAnimations } from "@/hooks/use-performance";
 
 const forYou = [
-  "You're looking for personalized guidance, not generic plans",
-  "You value daily support, accountability, and real human connection",
-  "You're willing to show up, communicate honestly, and trust the process",
-  "You want long-term results, not quick fixes",
+  "You value personalized guidance over generic plans",
+  "You respect structure and consistent execution",
+  "You communicate openly and take ownership",
+  "You're committed to long-term results",
 ];
 
 const notForYou = [
-  "You're only looking for a PDF or one-time plan",
-  "You want results without putting in consistent effort",
-  "You're not ready to engage with the team or follow guidance",
-  "You're looking for shortcuts instead of sustainable habits",
+  "You're looking for shortcuts instead of structured progress",
+  "You expect results without consistent effort",
+  "You prefer one-time plans over long-term guidance",
 ];
 
 const Approach = () => {
@@ -31,11 +30,11 @@ const Approach = () => {
           transition={{ duration: disableAnimations ? 0 : 0.6 }}
           className="text-center mb-12 md:mb-16 px-4 sm:px-0"
         >
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">
-            Our Approach & <span className="text-gradient">Expectations</span>
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4">
+            Our <span className="text-gradient">Approach</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            We work best with people who genuinely want to improve their health and are ready to stay consistent.
+            We work with individuals who value structure, accountability, and long-term performance.
           </p>
         </motion.div>
 
@@ -102,16 +101,6 @@ const Approach = () => {
             </ul>
           </motion.div>
         </div>
-
-        <motion.p
-          initial={disableAnimations ? { opacity: 1 } : { opacity: 0, y: 20 }}
-          whileInView={disableAnimations ? { opacity: 1 } : { opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: disableAnimations ? 0 : 0.6 }}
-          className="text-center text-lg text-muted-foreground mt-12 font-body"
-        >
-          We believe real change happens when the right system meets the right mindset.
-        </motion.p>
       </div>
     </section>
   );
