@@ -48,7 +48,7 @@ const Hero = () => {
             transition={{ duration: disableAnimations ? 0 : 0.8, delay: 0.3 }}
             className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-none mb-6"
           >
-            Elite Coaching for Professionals.
+            Elite Fitness Coaching for Professionals.
             <br />
             <span className="text-gradient">Built on Systems.</span>
             <br />
@@ -61,7 +61,7 @@ const Hero = () => {
             transition={{ duration: disableAnimations ? 0 : 0.8, delay: 0.5 }}
             className="text-base md:text-lg text-foreground/75 md:text-muted-foreground max-w-2xl mb-8 font-body"
           >
-            Personalized fitness, nutrition, and yoga programs designed for structured, long-term performance — not short-term motivation.
+            Structured training. Personalized nutrition. Long-term performance.
           </motion.p>
 
           <motion.div
@@ -74,7 +74,7 @@ const Hero = () => {
               href={GOOGLE_FORM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg gradient-primary font-semibold text-sm transition-all duration-300 hover:scale-105"
+              className="group inline-flex items-center justify-center gap-2 px-6 py-3 md:py-2.5 rounded-lg gradient-primary font-semibold text-base md:text-sm transition-all duration-300 hover:scale-105"
             >
               Start Your Trial Week
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

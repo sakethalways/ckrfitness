@@ -3,16 +3,16 @@ import { Check, X } from "lucide-react";
 import { useDisableAnimations } from "@/hooks/use-performance";
 
 const forYou = [
-  "You value personalized guidance over generic plans",
-  "You respect structure and consistent execution",
-  "You communicate openly and take ownership",
+  "You value personalized guidance",
+  "You respect structure and consistency",
+  "You take ownership of your progress",
   "You're committed to long-term results",
 ];
 
 const notForYou = [
-  "You're looking for shortcuts instead of structured progress",
-  "You expect results without consistent effort",
-  "You prefer one-time plans over long-term guidance",
+  "You're looking for shortcuts",
+  "You expect results without effort",
+  "You prefer quick plans over structured coaching",
 ];
 
 const Approach = () => {
@@ -33,8 +33,8 @@ const Approach = () => {
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4">
             Our <span className="text-gradient">Approach</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-body">
-            We work with individuals who value structure, accountability, and long-term performance.
+          <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto font-body">
+            We work with professionals who value structure, accountability, and long-term performance.
           </p>
         </motion.div>
 

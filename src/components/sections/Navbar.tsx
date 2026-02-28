@@ -8,7 +8,7 @@ const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd282UtWOtK8TQ
 const navLinks = [
   { name: "Team", href: "#team" },
   { name: "Approach", href: "#approach" },
-  { name: "How It Works", href: "#how-it-works" },
+  { name: "System", href: "#how-it-works" },
   { name: "Programs", href: "#programs" },
   { name: "FAQ", href: "#faq" },
 ];
@@ -101,7 +101,7 @@ const Navbar = () => {
                     animate={disableAnimations ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
                     transition={disableAnimations ? { duration: 0 } : { delay: index * 0.05 }}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="font-display text-xl text-foreground hover:text-primary transition-colors"
+                    className="font-display text-3xl text-foreground hover:text-primary transition-colors"
                   >
                     {link.name}
                   </motion.a>
@@ -113,7 +113,7 @@ const Navbar = () => {
                   initial={disableAnimations ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                   animate={disableAnimations ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
                   transition={disableAnimations ? { duration: 0 } : { delay: navLinks.length * 0.05 }}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg gradient-primary font-semibold text-base mt-4"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg gradient-primary font-semibold text-lg mt-6 w-full hover:scale-105 transition-transform"
                 >
                   Start Trial Week
                   <ArrowRight className="w-5 h-5" />

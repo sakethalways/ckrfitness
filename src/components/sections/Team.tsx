@@ -5,26 +5,26 @@ import { useDisableAnimations } from "@/hooks/use-performance";
 const team = [
   {
     icon: Dumbbell,
-    role: "Fitness Coaches",
-    description: "Handle training, exercise form, progression, consistency, and workout execution.",
+    role: "Fitness Coach",
+    description: "Handles training execution, progression, and form correction.",
     color: "from-orange-500 to-red-500",
   },
   {
     icon: Utensils,
-    role: "Nutrition Coaches",
-    description: "Create practical, personalized nutrition based on your lifestyle, preferences, and habits.",
+    role: "Nutrition Coach",
+    description: "Designs personalized nutrition aligned with your lifestyle.",
     color: "from-green-500 to-emerald-500",
   },
   {
     icon: Stethoscope,
     role: "Physiotherapist",
-    description: "Supports mobility, injury prevention, pain management, and safe movement when required.",
+    description: "Supports mobility, recovery, and injury prevention when required.",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: ClipboardList,
     role: "Program Lead",
-    description: "Ensures clear communication, regular follow-ups, and coordination between the team.",
+    description: "Ensures communication, follow-ups, and structured accountability.",
     color: "from-purple-500 to-pink-500",
   },
 ];
@@ -47,8 +47,8 @@ const Team = () => {
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4">
             Meet the <span className="text-gradient">Team</span> Behind Your Progress
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto font-body">
-            We are not a one-person operation. Every client is supported by a structured team, each with a clear role — so your progress never depends on just one individual.
+          <p className="text-muted-foreground text-base sm:text-lg max-w-3xl mx-auto font-body">
+            Every client is supported by a structured team not a single coach.
           </p>
         </motion.div>
 

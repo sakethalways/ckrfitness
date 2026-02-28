@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { useDisableAnimations } from "@/hooks/use-performance";
 
 const reasons = [
-  "Multiple experts supporting one client — fitness, nutrition, and mobility aligned",
-  "Daily structured communication, not occasional follow-ups",
-  "Programs that adapt as your schedule, goals, and performance evolve",
-  "Real accountability and human connection — not automated systems",
-  "A structured system designed for long-term consistency, not short-term motivation",
+  "A dedicated performance team supporting one client training, nutrition, mobility aligned",
+  "Daily structured communication follow-ups not occasional",
+  "Programs that evolve with your goals, schedule, and performance data",
+  "Real accountability and human oversight, not automated templates",
+  "A performance system built for long-term consistency, not short-term motivation",
 ];
 
 const WhyClients = () => {

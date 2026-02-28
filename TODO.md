@@ -1,1 +1,0 @@
-- [ ] Remove padding from #root in App.css to fix mobile visibility issue

@@ -7,79 +7,81 @@ const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSd282UtWOtK8TQ
 const programs = [
   {
     icon: Dumbbell,
-    title: "Private Live Coaching",
-    bestFor: "Professionals who want structured accountability and real-time coaching.",
+    title: "Private Performance Coaching",
+    bestFor: "Best for professionals who want structured accountability, live coaching, and full performance support.",
     features: [
       "Private live coaching sessions",
       "Personalized training structure",
       "Integrated nutrition support",
-      "Daily communication access",
+      "Daily communication access to assigned team",
       "Weekly performance reviews",
-      "Physio & mobility support when required",
+      "Physio & mobility support when needed",
+      "Program Lead for accountability and coordination",
     ],
     pricing: [
-      { duration: "4 Weeks / 4 Sessions", price: "₹14,000" },
-      { duration: "4 Weeks / 5 Sessions", price: "₹16,000" },
-      { duration: "12 Weeks / 4 Sessions", price: "₹39,000", label: "Most Popular" },
-      { duration: "12 Weeks / 5 Sessions", price: "₹45,000" },
+      { duration: "4 Weeks (4 Sessions/Week)", price: "₹18,000" },
+      { duration: "4 Weeks (5 Sessions/Week)", price: "₹21,000" },
+      { duration: "12 Weeks (4 Sessions/Week)", price: "₹45,000", label: "Most Popular", bold: true },
+      { duration: "12 Weeks (5 Sessions/Week)", price: "₹54,000", bold: true },
     ],
     featured: true,
   },
   {
     icon: Dumbbell,
     title: "Structured Online Coaching",
-    bestFor: "Professionals who want structured guidance without daily live sessions.",
+    bestFor: "Best for professionals who want structured guidance without daily live sessions.",
     features: [
       "Personalized training program",
       "Custom nutrition framework",
-      "Two live demo sessions for form guidance",
+      "Two live demo sessions",
       "Video-based form review",
       "Weekly structured check-ins",
       "Ongoing chat and call support",
+      "Assigned Program Lead",
     ],
-    pricing: [{ duration: "12 Weeks", price: "₹26,000" }],
+    pricing: [{ duration: "12 Weeks", price: "₹32,000" }],
     featured: false,
   },
   {
     icon: Utensils,
     title: "Performance Nutrition Coaching",
-    bestFor: "Individuals focused on sustainable fat loss, muscle gain, or metabolic health.",
+    bestFor: "Best for individuals focused on sustainable fat loss, muscle gain, or metabolic health.",
     features: [
       "Fully customized nutrition strategy",
-      "Lifestyle-integrated meal structure",
+      "Lifestyle-integrated meal planning",
       "Weekly progress reviews",
       "Daily communication support",
     ],
-    pricing: [{ duration: "12 Weeks", price: "₹16,000" }],
+    pricing: [{ duration: "12 Weeks", price: "₹22,000" }],
     featured: false,
   },
   {
     icon: Leaf,
     title: "Group Yoga (Online)",
-    bestFor: "Professionals seeking flexibility, mobility, and structured weekly recovery.",
+    bestFor: "Best for professionals seeking flexibility, mobility, and structured weekly recovery.",
     features: [
       "Live online group yoga sessions",
-      "5 structured days per week",
+      "4 structured training days per week",
       "Multiple live time slots each day",
       "Access to attend any scheduled session",
       "12-week structured format",
     ],
-    pricing: [{ duration: "12 Weeks", price: "₹16,000" }],
+    pricing: [{ duration: "12 Weeks", price: "₹18,000" }],
     featured: false,
   },
   {
     icon: Users,
     title: "Yoga + Nutrition Coaching",
-    bestFor: "Individuals who want structured yoga and personalized nutrition combined.",
+    bestFor: "Best for individuals who want structured yoga and personalized nutrition combined.",
     features: [
-      "Live online group yoga sessions",
-      "5 structured days per week",
-      "Access to attend any scheduled session",
+      "Live online group yoga sessions (4 structured days/week)",
+      "Access to all scheduled yoga sessions",
       "Personalized nutrition strategy",
       "Weekly nutrition reviews",
       "Daily structured support",
+      "12-week structured format",
     ],
-    pricing: [{ duration: "12 Weeks", price: "₹26,000" }],
+    pricing: [{ duration: "12 Weeks", price: "₹30,000" }],
     featured: false,
   },
 ];
@@ -102,8 +104,14 @@ const Programs = () => {
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl mb-4">
             Programs & <span className="text-gradient">Investment</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto font-body">
-            All programs are delivered in a structured online format, ensuring international accessibility and consistent support. Every client begins with a structured trial week. Final program structure and long-term commitment are confirmed after alignment during onboarding.
+              <p className="text-muted-foreground text-base sm:text-lg max-w-3xl mx-auto font-body">
+            All programs are delivered through a structured performance system designed for long-term results.
+          </p>
+          <p className="text-muted-foreground text-base sm:text-lg max-w-3xl mx-auto font-body mt-2">
+            Every client begins with a structured Trial Week. Long-term commitment is confirmed after alignment during onboarding.
+          </p>
+          <p className="text-muted-foreground text-sm sm:text-base max-w-3xl mx-auto font-body mt-2">
+            Limited slots available to maintain delivery standards.
           </p>
         </motion.div>
 
@@ -149,12 +157,18 @@ const Programs = () => {
 
               <div className="border-t border-border pt-4">
                 {program.pricing.map((price, idx) => (
-                  <div key={idx} className="flex justify-between items-center mb-2 font-body">
+                  <div key={idx} className={`flex justify-between items-center mb-2 font-body ${price.bold ? "font-bold" : ""}`}>
                     <span className="text-sm text-muted-foreground">{price.duration}</span>
-                    <span className="font-semibold text-foreground">{price.price}</span>
+                    <span className={`font-semibold text-foreground ${price.bold ? "text-lg font-bold" : ""}`}>{price.price}</span>
                   </div>
                 ))}
               </div>
+
+              {program.featured && (
+                <p className="text-xs text-muted-foreground mt-4 italic">
+                  Limited private slots available per batch to maintain coaching standards.
+                </p>
+              )}
             </motion.div>
           ))}
         </div>

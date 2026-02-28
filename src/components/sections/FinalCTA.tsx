@@ -37,9 +37,9 @@ const FinalCTA = () => {
             whileInView={disableAnimations ? { opacity: 1 } : { opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: disableAnimations ? 0 : 0.3 }}
-            className="text-lg md:text-xl text-muted-foreground mb-8 font-body"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 font-body"
           >
-            Begin with a structured trial week and experience how our system operates.
+            Begin with a structured trial week and experience how a performance system operates.
           </motion.p>
 
           <motion.div

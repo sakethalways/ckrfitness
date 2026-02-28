@@ -10,35 +10,31 @@ import {
 const faqs = [
   {
     question: "Do I need to pay before starting?",
-    answer: "Payment begins only after the trial week if you decide to continue.",
+    answer: "You begin with a structured trial week. Long-term commitment is confirmed only after alignment.",
   },
   {
     question: "What happens during the trial week?",
-    answer: "You complete onboarding, experience structured coaching, and interact with your assigned team. This allows you to understand our communication standards and system before long-term commitment.",
+    answer: "You complete onboarding, work with your assigned team, and experience our communication and performance standards.",
   },
   {
-    question: "How is this different from other online coaching programs?",
-    answer: "Most programs provide static plans with limited follow-up. Our system involves multiple specialists, daily communication, structured reviews, and ongoing program adjustments.",
+    question: "How is this different from typical online coaching?",
+    answer: "We operate as a structured performance system — multiple specialists, daily communication, weekly reviews, and continuous adjustments.",
   },
   {
-    question: "How much time do I need to commit each day?",
-    answer: "Program structure is designed around your schedule. Consistency matters more than long hours, and plans are adjusted to fit your availability.",
+    question: "Who is this designed for?",
+    answer: "Professionals who value structure, accountability, and long-term performance.",
   },
   {
-    question: "Is this only for beginners?",
-    answer: "No. We work with beginners, professionals returning after a break, and experienced individuals seeking structured performance support.",
+    question: "How much time do I need to commit?",
+    answer: "Programs are built around your schedule. Execution and consistency matter more than duration.",
   },
   {
-    question: "Do you provide strict meal plans?",
-    answer: "Nutrition is personalized and practical. We build strategies around your lifestyle instead of imposing rigid or generic diets.",
+    question: "What if I have injuries or limitations?",
+    answer: "Training is adjusted accordingly. Physio and mobility support are integrated when required.",
   },
   {
-    question: "What if I have injuries or pain?",
-    answer: "Programs are adjusted accordingly. Physiotherapy support is integrated when required to ensure safe progress.",
-  },
-  {
-    question: "What if I decide not to continue after the trial week?",
-    answer: "There is no obligation. You continue only if the structure aligns with your expectations.",
+    question: "What happens after the trial week?",
+    answer: "If aligned, you transition into a long-term structured program with the same team.",
   },
   {
     question: "How do I get started?",

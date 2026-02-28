@@ -8,27 +8,27 @@ const steps = [
   {
     icon: Play,
     title: "Apply for a Trial Week",
-    description: "Every client begins with a structured trial week. This allows you to experience our communication, systems, and coaching standards before making any long-term commitment.",
+    description: "Experience our structure before committing long-term.",
   },
   {
     icon: ClipboardCheck,
-    title: "Assessment & Onboarding Call",
-    description: "You complete a detailed assessment. We conduct an onboarding call to understand your goals, lifestyle, limitations, and performance expectations.",
+    title: "Assessment & Onboarding",
+    description: "We align goals, lifestyle, and performance expectations.",
   },
   {
     icon: Calendar,
     title: "Experience the System",
-    description: "You work directly with your assigned team. Daily communication, structured programming, and accountability begin immediately.",
+    description: "Structured programming. Daily accountability. Team support.",
   },
   {
     icon: CheckCircle2,
-    title: "Continue if Aligned",
-    description: "If the structure aligns with your expectations, you transition into a long-term program. The same team continues with you.",
+    title: "Continue If Aligned",
+    description: "Transition into long-term coaching with the same team.",
   },
   {
     icon: TrendingUp,
-    title: "Review, Adjust & Progress",
-    description: "Progress is tracked weekly. Programs evolve based on data, performance, and feedback. We optimize continuously.",
+    title: "Review & Progress",
+    description: "Weekly tracking. Continuous optimization.",
   },
 ];
 
